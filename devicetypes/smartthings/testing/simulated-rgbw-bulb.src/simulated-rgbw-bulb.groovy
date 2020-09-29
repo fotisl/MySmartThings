@@ -43,7 +43,7 @@ import groovy.transform.Field
 ]
 
 metadata {
-    definition (name: "Simulated RGBW Bulb", namespace: "smartthings/testing", author: "SmartThings", ocfDeviceType: "oic.d.light") {
+    definition (name: "Simulated RGBW Bulb New", namespace: "smartthings/testing", author: "SmartThings", ocfDeviceType: "oic.d.light") {
         capability "Health Check"
         capability "Actuator"
         capability "Sensor"
