@@ -50,7 +50,7 @@ def off() {
     sendEvent(name: "switch", value: "off")
 }
 
-def setMute(bool state) {
+def setMute(state) {
     log.debug "setMute(${state})"
     if(state)
         sendEvent(name: "mute", value: "muted");
@@ -58,7 +58,7 @@ def setMute(bool state) {
         sendEvent(name: "mute", value: "unmuted");
 }
 
-def setVolume(int volume) {
+def setVolume(volume) {
     log.debug "setVolume(${volume})"
     sendEvent(name: "volume", value: volume);
 }
