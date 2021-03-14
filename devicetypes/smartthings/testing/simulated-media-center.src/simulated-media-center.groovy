@@ -15,12 +15,6 @@ metadata {
             state "off", label: '${currentValue}', action: "switch.on", icon: "st.switches.switch.off", backgroundColor: "#ffffff"
             state "on", label: '${currentValue}', action: "switch.off", icon: "st.switches.switch.on", backgroundColor: "#00A0DC"
         }
-        standardTile("on", "device.switch", decoration: "flat") {
-            state "default", label: 'On', action: "onPhysical", backgroundColor: "#ffffff"
-        }
-        standardTile("off", "device.switch", decoration: "flat") {
-            state "default", label: 'Off', action: "offPhysical", backgroundColor: "#ffffff"
-        }
         main "switch"
         details(["switch","on","off","deviceHealthControl"])
     }
